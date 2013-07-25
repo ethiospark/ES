@@ -49,7 +49,7 @@ namespace EthioSpark.BuisnessLogic.Security
                         }
                         catch (Exception ex)
                         {
-                            //FA - TODO: configure and use Log4NET to log exception 
+                            //FA - TODO: configure and use Log4NET to log exception .
                             
                         }
                     }
