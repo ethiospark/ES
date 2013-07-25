@@ -1,0 +1,27 @@
+﻿<#@ template language="C#" debug="false" hostspecific="true"#>
+<#@ assembly name="System.Windows.Forms" #>
+<#@ import namespace="System.Resources" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.ComponentModel.Design" #>
+<#@ import namespace="System.IO" #>
+<#@ output extension=".js"#>
+<#
+ var path = Host.ResolvePath("..\\");
+ var resourceNames = new string[1]
+ {
+  "StringResources"
+ };
+
+#>
+var StrRes = {
+<# foreach (var name in resourceNames) {
+ var enFile = Host.ResolvePath(path + name + ".resx" );
+ ResXResourceReader reader = new ResXResourceReader(enFile);
+ reader.UseResXDataNodes = true;
+#>
+<# foreach (DictionaryEntry entry in reader){
+    ResXDataNode dnode = (ResXDataNode)entry.Value;
+	if(dnode.Comment=="CRS") { #>	
+	<#=dnode.Name.ToString()#> : {
+	 'en-US': '<#= ("" + dnode.GetValue((ITypeResolutionService) null)).Replace("\r\n", string.Empty).Replace("'","\\'")#>'
+	 },<# } #><# } #><# } #>};

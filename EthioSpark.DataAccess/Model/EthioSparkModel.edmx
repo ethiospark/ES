@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EthioSparkModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EthioSparkModelStoreContainer">
+          <EntitySet Name="address" EntityType="EthioSparkModel.Store.address" store:Type="Tables" Schema="ethiospark" />
+          <EntitySet Name="code_set" EntityType="EthioSparkModel.Store.code_set" store:Type="Tables" Schema="ethiospark" />
+          <EntitySet Name="code_value" EntityType="EthioSparkModel.Store.code_value" store:Type="Tables" Schema="ethiospark" />
+          <EntitySet Name="picture" EntityType="EthioSparkModel.Store.picture" store:Type="Tables" Schema="ethiospark" />
+          <EntitySet Name="user" EntityType="EthioSparkModel.Store.user" store:Type="Tables" Schema="ethiospark" />
+          <AssociationSet Name="fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS" Association="EthioSparkModel.Store.fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CITY_CODE_VALUE__CITY_ADDRESSES" Association="EthioSparkModel.Store.fk_CITY_CODE_VALUE__CITY_ADDRESSES">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="address" EntitySet="address" />
+          </AssociationSet>
+          <AssociationSet Name="fk_CODE_VALUE_CODE_SET" Association="EthioSparkModel.Store.fk_CODE_VALUE_CODE_SET">
+            <End Role="code_set" EntitySet="code_set" />
+            <End Role="code_value" EntitySet="code_value" />
+          </AssociationSet>
+          <AssociationSet Name="fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES" Association="EthioSparkModel.Store.fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="address" EntitySet="address" />
+          </AssociationSet>
+          <AssociationSet Name="fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS" Association="EthioSparkModel.Store.fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_EDUCATION_CODE_VALUE__EDUCATION_USERS" Association="EthioSparkModel.Store.fk_EDUCATION_CODE_VALUE__EDUCATION_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS" Association="EthioSparkModel.Store.fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_HEIGHT_CODE_VALUE__HEIGHT_USERS" Association="EthioSparkModel.Store.fk_HEIGHT_CODE_VALUE__HEIGHT_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Pictures_USER" Association="EthioSparkModel.Store.fk_Pictures_USER">
+            <End Role="user" EntitySet="user" />
+            <End Role="picture" EntitySet="picture" />
+          </AssociationSet>
+          <AssociationSet Name="fk_RELIGION_CODE_VALUE__RELIGION_USERS" Association="EthioSparkModel.Store.fk_RELIGION_CODE_VALUE__RELIGION_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS" Association="EthioSparkModel.Store.fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS">
+            <End Role="code_value" EntitySet="code_value" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+          <AssociationSet Name="fk_USER_ADDRESS" Association="EthioSparkModel.Store.fk_USER_ADDRESS">
+            <End Role="address" EntitySet="address" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="address">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ZIPCODE" Type="varchar" MaxLength="50" />
+          <Property Name="CITY_CD" Type="int" Nullable="false" />
+          <Property Name="COUNTRY_CD" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="code_set">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DISPLAY_NAME" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="code_value">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="CODE_SET_ID" Type="int" Nullable="false" />
+          <Property Name="DISPLAY_NAME" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="MEANING" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="picture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="FILENAME" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="MEMBERSHIP_USER_ID" Type="int" Nullable="false" />
+          <Property Name="ADDRESS_ID" Type="int" Nullable="false" />
+          <Property Name="GENDER" Type="tinyint" Nullable="false" />
+          <Property Name="SEEKING_GENDER" Type="tinyint" Nullable="false" />
+          <Property Name="DOB" Type="datetime" Nullable="false" />
+          <Property Name="ABOUT_ME" Type="varchar" MaxLength="5000" />
+          <Property Name="OCCUPATION" Type="varchar" MaxLength="50" />
+          <Property Name="HAS_KIDS" Type="bool" />
+          <Property Name="EDUCATION_CD" Type="int" />
+          <Property Name="ETHNICITY_CD" Type="int" />
+          <Property Name="RELIGION_CD" Type="int" />
+          <Property Name="HEIGHT_CD" Type="int" />
+          <Property Name="BODY_TYPE_CD" Type="int" />
+          <Property Name="SMOKING_HABIT_CD" Type="int" />
+          <Property Name="DRINKING_HABIT_CD" Type="int" />
+        </EntityType>
+        <Association Name="fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="BODY_TYPE_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CITY_CODE_VALUE__CITY_ADDRESSES">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="1" />
+          <End Role="address" Type="EthioSparkModel.Store.address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="address">
+              <PropertyRef Name="CITY_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_CODE_VALUE_CODE_SET">
+          <End Role="code_set" Type="EthioSparkModel.Store.code_set" Multiplicity="1" />
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_set">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="code_value">
+              <PropertyRef Name="CODE_SET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="1" />
+          <End Role="address" Type="EthioSparkModel.Store.address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="address">
+              <PropertyRef Name="COUNTRY_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="DRINKING_HABIT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_EDUCATION_CODE_VALUE__EDUCATION_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="EDUCATION_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="ETHNICITY_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_HEIGHT_CODE_VALUE__HEIGHT_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="HEIGHT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Pictures_USER">
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="1" />
+          <End Role="picture" Type="EthioSparkModel.Store.picture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="picture">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_RELIGION_CODE_VALUE__RELIGION_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="RELIGION_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS">
+          <End Role="code_value" Type="EthioSparkModel.Store.code_value" Multiplicity="0..1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="SMOKING_HABIT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_USER_ADDRESS">
+          <End Role="address" Type="EthioSparkModel.Store.address" Multiplicity="1" />
+          <End Role="user" Type="EthioSparkModel.Store.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="address">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="ADDRESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EthioSparkModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="EthioSparkModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="code_sets" EntityType="EthioSparkModel.code_set" />
+          <EntitySet Name="code_values" EntityType="EthioSparkModel.code_value" />
+          <EntitySet Name="pictures" EntityType="EthioSparkModel.picture" />
+          <AssociationSet Name="fk_CODE_VALUE_CODE_SET" Association="EthioSparkModel.fk_CODE_VALUE_CODE_SET">
+            <End Role="code_set" EntitySet="code_sets" />
+            <End Role="code_value" EntitySet="code_values" />
+          </AssociationSet>
+          <EntitySet Name="addresses" EntityType="EthioSparkModel.address" />
+          <AssociationSet Name="fk_CITY_CODE_VALUE__CITY_ADDRESSES" Association="EthioSparkModel.fk_CITY_CODE_VALUE__CITY_ADDRESSES">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="address" EntitySet="addresses" />
+          </AssociationSet>
+          <AssociationSet Name="fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES" Association="EthioSparkModel.fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="address" EntitySet="addresses" />
+          </AssociationSet>
+          <EntitySet Name="users" EntityType="EthioSparkModel.user" />
+          <AssociationSet Name="fk_USER_ADDRESS" Association="EthioSparkModel.fk_USER_ADDRESS">
+            <End Role="address" EntitySet="addresses" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS" Association="EthioSparkModel.fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS" Association="EthioSparkModel.fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_EDUCATION_CODE_VALUE__EDUCATION_USERS" Association="EthioSparkModel.fk_EDUCATION_CODE_VALUE__EDUCATION_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS" Association="EthioSparkModel.fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_HEIGHT_CODE_VALUE__HEIGHT_USERS" Association="EthioSparkModel.fk_HEIGHT_CODE_VALUE__HEIGHT_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_RELIGION_CODE_VALUE__RELIGION_USERS" Association="EthioSparkModel.fk_RELIGION_CODE_VALUE__RELIGION_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS" Association="EthioSparkModel.fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS">
+            <End Role="code_value" EntitySet="code_values" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Pictures_USER" Association="EthioSparkModel.fk_Pictures_USER">
+            <End Role="user" EntitySet="users" />
+            <End Role="picture" EntitySet="pictures" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="code_set">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="DISPLAY_NAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="code_value" Relationship="EthioSparkModel.fk_CODE_VALUE_CODE_SET" FromRole="code_set" ToRole="code_value" />
+        </EntityType>
+        <EntityType Name="code_value">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="CODE_SET_ID" Nullable="false" />
+          <Property Type="String" Name="DISPLAY_NAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="code_set" Relationship="EthioSparkModel.fk_CODE_VALUE_CODE_SET" FromRole="code_value" ToRole="code_set" />
+          <NavigationProperty Name="addresses" Relationship="EthioSparkModel.fk_CITY_CODE_VALUE__CITY_ADDRESSES" FromRole="code_value" ToRole="address" />
+          <NavigationProperty Name="addresses1" Relationship="EthioSparkModel.fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES" FromRole="code_value" ToRole="address" />
+          <Property Type="String" Name="MEANING" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="users" Relationship="EthioSparkModel.fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS" FromRole="code_value" ToRole="user" />
+          <NavigationProperty Name="users1" Relationship="EthioSparkModel.fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS" FromRole="code_value" ToRole="user" />
+          <NavigationProperty Name="users2" Relationship="EthioSparkModel.fk_EDUCATION_CODE_VALUE__EDUCATION_USERS" FromRole="code_value" ToRole="user" />
+          <NavigationProperty Name="users3" Relationship="EthioSparkModel.fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS" FromRole="code_value" ToRole="user" />
+          <NavigationProperty Name="users4" Relationship="EthioSparkModel.fk_HEIGHT_CODE_VALUE__HEIGHT_USERS" FromRole="code_value" ToRole="user" />
+          <NavigationProperty Name="users5" Relationship="EthioSparkModel.fk_RELIGION_CODE_VALUE__RELIGION_USERS" FromRole="code_value" ToRole="user" />
+          <NavigationProperty Name="users6" Relationship="EthioSparkModel.fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS" FromRole="code_value" ToRole="user" />
+          </EntityType>
+        <EntityType Name="picture">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="USER_ID" Nullable="false" />
+          <Property Type="String" Name="FILENAME" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DESCRIPTION" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="user" Relationship="EthioSparkModel.fk_Pictures_USER" FromRole="picture" ToRole="user" />
+        </EntityType>
+        <Association Name="fk_CODE_VALUE_CODE_SET">
+          <End Type="EthioSparkModel.code_set" Role="code_set" Multiplicity="1" />
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_set">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="code_value">
+              <PropertyRef Name="CODE_SET_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="address">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="ZIPCODE" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="CITY_CD" Nullable="false" />
+          <Property Type="Int32" Name="COUNTRY_CD" Nullable="false" />
+          <NavigationProperty Name="code_value" Relationship="EthioSparkModel.fk_CITY_CODE_VALUE__CITY_ADDRESSES" FromRole="address" ToRole="code_value" />
+          <NavigationProperty Name="code_value1" Relationship="EthioSparkModel.fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES" FromRole="address" ToRole="code_value" />
+          <NavigationProperty Name="users" Relationship="EthioSparkModel.fk_USER_ADDRESS" FromRole="address" ToRole="user" />
+        </EntityType>
+        <Association Name="fk_CITY_CODE_VALUE__CITY_ADDRESSES">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="1" />
+          <End Type="EthioSparkModel.address" Role="address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="address">
+              <PropertyRef Name="CITY_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="1" />
+          <End Type="EthioSparkModel.address" Role="address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="address">
+              <PropertyRef Name="COUNTRY_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="MEMBERSHIP_USER_ID" Nullable="false" />
+          <Property Type="Int32" Name="ADDRESS_ID" Nullable="false" />
+          <Property Type="SByte" Name="GENDER" Nullable="false" />
+          <Property Type="SByte" Name="SEEKING_GENDER" Nullable="false" />
+          <Property Type="DateTime" Name="DOB" Nullable="false" />
+          <Property Type="String" Name="ABOUT_ME" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="OCCUPATION" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="HAS_KIDS" />
+          <Property Type="Int32" Name="EDUCATION_CD" />
+          <Property Type="Int32" Name="ETHNICITY_CD" />
+          <Property Type="Int32" Name="RELIGION_CD" />
+          <Property Type="Int32" Name="HEIGHT_CD" />
+          <Property Type="Int32" Name="BODY_TYPE_CD" />
+          <Property Type="Int32" Name="SMOKING_HABIT_CD" />
+          <Property Type="Int32" Name="DRINKING_HABIT_CD" />
+          <NavigationProperty Name="address" Relationship="EthioSparkModel.fk_USER_ADDRESS" FromRole="user" ToRole="address" />
+          <NavigationProperty Name="code_value" Relationship="EthioSparkModel.fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="code_value1" Relationship="EthioSparkModel.fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="code_value2" Relationship="EthioSparkModel.fk_EDUCATION_CODE_VALUE__EDUCATION_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="code_value3" Relationship="EthioSparkModel.fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="code_value4" Relationship="EthioSparkModel.fk_HEIGHT_CODE_VALUE__HEIGHT_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="code_value5" Relationship="EthioSparkModel.fk_RELIGION_CODE_VALUE__RELIGION_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="code_value6" Relationship="EthioSparkModel.fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS" FromRole="user" ToRole="code_value" />
+          <NavigationProperty Name="pictures" Relationship="EthioSparkModel.fk_Pictures_USER" FromRole="user" ToRole="picture" />
+        </EntityType>
+        <Association Name="fk_USER_ADDRESS">
+          <End Type="EthioSparkModel.address" Role="address" Multiplicity="1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="address">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="ADDRESS_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="BODY_TYPE_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="DRINKING_HABIT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_EDUCATION_CODE_VALUE__EDUCATION_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="EDUCATION_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="ETHNICITY_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_HEIGHT_CODE_VALUE__HEIGHT_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="HEIGHT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_RELIGION_CODE_VALUE__RELIGION_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="RELIGION_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS">
+          <End Type="EthioSparkModel.code_value" Role="code_value" Multiplicity="0..1" />
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="code_value">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="SMOKING_HABIT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Pictures_USER">
+          <End Type="EthioSparkModel.user" Role="user" Multiplicity="1" />
+          <End Type="EthioSparkModel.picture" Role="picture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="picture">
+              <PropertyRef Name="USER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="EthioSparkModel" />
+        <Alias Key="Target" Value="EthioSparkModel.Store" />
+        <EntityContainerMapping CdmEntityContainer="EthioSparkModelContainer" StorageEntityContainer="EthioSparkModelStoreContainer">
+          <EntitySetMapping Name="code_sets">
+            <EntityTypeMapping TypeName="EthioSparkModel.code_set">
+              <MappingFragment StoreEntitySet="code_set">
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="code_values">
+            <EntityTypeMapping TypeName="EthioSparkModel.code_value">
+              <MappingFragment StoreEntitySet="code_value">
+                <ScalarProperty Name="MEANING" ColumnName="MEANING" />
+                <ScalarProperty Name="DISPLAY_NAME" ColumnName="DISPLAY_NAME" />
+                <ScalarProperty Name="CODE_SET_ID" ColumnName="CODE_SET_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pictures">
+            <EntityTypeMapping TypeName="EthioSparkModel.picture">
+              <MappingFragment StoreEntitySet="picture">
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="addresses">
+            <EntityTypeMapping TypeName="EthioSparkModel.address">
+              <MappingFragment StoreEntitySet="address">
+                <ScalarProperty Name="COUNTRY_CD" ColumnName="COUNTRY_CD" />
+                <ScalarProperty Name="CITY_CD" ColumnName="CITY_CD" />
+                <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="EthioSparkModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="DRINKING_HABIT_CD" ColumnName="DRINKING_HABIT_CD" />
+                <ScalarProperty Name="SMOKING_HABIT_CD" ColumnName="SMOKING_HABIT_CD" />
+                <ScalarProperty Name="BODY_TYPE_CD" ColumnName="BODY_TYPE_CD" />
+                <ScalarProperty Name="HEIGHT_CD" ColumnName="HEIGHT_CD" />
+                <ScalarProperty Name="RELIGION_CD" ColumnName="RELIGION_CD" />
+                <ScalarProperty Name="ETHNICITY_CD" ColumnName="ETHNICITY_CD" />
+                <ScalarProperty Name="EDUCATION_CD" ColumnName="EDUCATION_CD" />
+                <ScalarProperty Name="HAS_KIDS" ColumnName="HAS_KIDS" />
+                <ScalarProperty Name="OCCUPATION" ColumnName="OCCUPATION" />
+                <ScalarProperty Name="ABOUT_ME" ColumnName="ABOUT_ME" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="SEEKING_GENDER" ColumnName="SEEKING_GENDER" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="ADDRESS_ID" ColumnName="ADDRESS_ID" />
+                <ScalarProperty Name="MEMBERSHIP_USER_ID" ColumnName="MEMBERSHIP_USER_ID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="EthioSparkModel" >
+        <EntityTypeShape EntityType="EthioSparkModel.code_set" Width="1.5" PointX="0.75" PointY="2.875" Height="1.787985026041667" />
+        <EntityTypeShape EntityType="EthioSparkModel.code_value" Width="1.5" PointX="3" PointY="2" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="EthioSparkModel.picture" Width="1.5" PointX="9.75" PointY="2.75" Height="1.9802864583333317" />
+        <AssociationConnector Association="EthioSparkModel.fk_CODE_VALUE_CODE_SET" >
+          <ConnectorPoint PointX="2.25" PointY="3.7689925130208337" />
+          <ConnectorPoint PointX="3" PointY="3.7689925130208337" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="EthioSparkModel.address" Width="1.5" PointX="5.25" PointY="2.625" Height="2.3648893229166665" />
+        <AssociationConnector Association="EthioSparkModel.fk_CITY_CODE_VALUE__CITY_ADDRESSES" >
+          <ConnectorPoint PointX="4.5" PointY="3.2104583599755117" />
+          <ConnectorPoint PointX="5.25" PointY="3.2104583599755117" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_COUNTRY_CODE_VALUE__COUNTRY_ADDRESSES" >
+          <ConnectorPoint PointX="4.5" PointY="4.1626738414460895" />
+          <ConnectorPoint PointX="5.25" PointY="4.1626738414460895" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="EthioSparkModel.user" Width="1.5" PointX="7.5" PointY="1" Height="5.8263151041666665" />
+        <AssociationConnector Association="EthioSparkModel.fk_USER_ADDRESS" >
+          <ConnectorPoint PointX="6.75" PointY="3.8074446614583333" />
+          <ConnectorPoint PointX="7.5" PointY="3.8074446614583333" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_BODY_TYPE_CODE_VALUE__BODY_TYPE_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="5.3816943359375" />
+          <ConnectorPoint PointX="7.5" PointY="5.3816943359375" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_DRINKING_HABIT_CODE_VALUE__DRINKING_HABIT_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="2.28125" />
+          <ConnectorPoint PointX="7.5" PointY="2.28125" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_EDUCATION_CODE_VALUE__EDUCATION_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="5.1545418294270835" />
+          <ConnectorPoint PointX="7.5" PointY="5.1545418294270835" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_ETHNICITY_CODE_VALUE__ETHNICITY_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="5.6088468424479156" />
+          <ConnectorPoint PointX="7.5" PointY="5.6088468424479156" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_HEIGHT_CODE_VALUE__HEIGHT_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="2.484375" />
+          <ConnectorPoint PointX="7.5" PointY="2.484375" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_RELIGION_CODE_VALUE__RELIGION_USERS" >
+          <ConnectorPoint PointX="4.5" PointY="2.078125" />
+          <ConnectorPoint PointX="7.5" PointY="2.078125" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_SMOKING_HABIT_CODE_VALUE__SMOKING_HABIT_USERS" >
+          <ConnectorPoint PointX="3.75" PointY="5.7109993489583326" />
+          <ConnectorPoint PointX="3.75" PointY="6.2686577265625" />
+          <ConnectorPoint PointX="7.5" PointY="6.2686577265625" />
+        </AssociationConnector>
+        <AssociationConnector Association="EthioSparkModel.fk_Pictures_USER" >
+          <ConnectorPoint PointX="9" PointY="3.7401432291666667" />
+          <ConnectorPoint PointX="9.75" PointY="3.7401432291666667" />
+        </AssociationConnector>
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
