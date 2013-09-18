@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ethiosparkModelStoreContainer" CdmEntityContainer="EthiosparkEntities">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="EthiosparkModel.Address">
+        <MappingFragment StoreEntitySet="address">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="CityCd" ColumnName="CityCd" />
+          <ScalarProperty Name="CountryCd" ColumnName="CountryCd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pictures">
+      <EntityTypeMapping TypeName="EthiosparkModel.Picture">
+        <MappingFragment StoreEntitySet="picture">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="EthiosparkModel.User">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MembershipUserId" ColumnName="MembershipUserId" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="SeekingGender" ColumnName="SeekingGender" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="AboutMe" ColumnName="AboutMe" />
+          <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+          <ScalarProperty Name="HasKids" ColumnName="HasKids" />
+          <ScalarProperty Name="EducationCd" ColumnName="EducationCd" />
+          <ScalarProperty Name="EthnicityCd" ColumnName="EthnicityCd" />
+          <ScalarProperty Name="ReligionCd" ColumnName="ReligionCd" />
+          <ScalarProperty Name="HeightCd" ColumnName="HeightCd" />
+          <ScalarProperty Name="BodyTypeCd" ColumnName="BodyTypeCd" />
+          <ScalarProperty Name="SmokingHabitCd" ColumnName="SmokingHabitCd" />
+          <ScalarProperty Name="DrinkingHabitCd" ColumnName="DrinkingHabitCd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodeSets">
+      <EntityTypeMapping TypeName="EthiosparkModel.CodeSet">
+        <MappingFragment StoreEntitySet="codeset">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodeValues">
+      <EntityTypeMapping TypeName="EthiosparkModel.CodeValue">
+        <MappingFragment StoreEntitySet="codevalue">
+          <ScalarProperty Name="Meaning" ColumnName="Meaning" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="CodeSetId" ColumnName="CodeSetId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

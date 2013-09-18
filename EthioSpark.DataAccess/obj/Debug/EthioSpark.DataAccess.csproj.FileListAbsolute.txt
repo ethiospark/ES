@@ -1,0 +1,41 @@
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.dll.config
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EntityFramework.dll
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\ES\EthioSpark.DataAccess\bin\Debug\EntityFramework.xml
+C:\MyProjects\ES\EthioSpark.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\ES\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.dll.config
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EntityFramework.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\MySql.Data.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\MySql.Data.Entity.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\MySql.Web.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\bin\Debug\EntityFramework.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.Migrations.ModelUpdate.resources
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\obj\Debug\GenerateResource.read.1.tlog
+C:\MyProjects\ES - CodeFirst\EthioSpark.DataAccess\obj\Debug\GenerateResource.write.1.tlog
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.dll.config
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EntityFramework.dll
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\EntityFramework.xml
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\MySql.Data.dll
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\bin\Debug\MySql.Data.Entity.dll
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\obj\Debug\EthioSpark.DataAccess.Migrations.ModelUpdate.resources
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\obj\Debug\GenerateResource.read.1.tlog
+C:\MyProjects\EthioSpark\EthioSpark.DataAccess\obj\Debug\GenerateResource.write.1.tlog

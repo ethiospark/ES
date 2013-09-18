@@ -1,0 +1,51 @@
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\Newtonsoft.Json.dll
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Net.Http.dll
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Net.Http.Formatting.dll
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Net.Http.WebRequest.dll
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Web.Http.dll
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\Newtonsoft.Json.xml
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Net.Http.xml
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Net.Http.Formatting.xml
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Net.Http.WebRequest.xml
+C:\MyProjects\ES\EthioSpark.Common\bin\Debug\System.Web.Http.xml
+C:\MyProjects\ES\EthioSpark.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES\EthioSpark.Common\obj\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES\EthioSpark.Common\obj\Debug\EthioSpark.Common.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\EthioSpark.Common.dll.config
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\log4net.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\Newtonsoft.Json.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Net.Http.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Net.Http.Formatting.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Net.Http.WebRequest.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Web.Http.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\log4net.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\Newtonsoft.Json.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Net.Http.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Net.Http.Formatting.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Net.Http.WebRequest.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\bin\Debug\System.Web.Http.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\obj\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Common\obj\Debug\EthioSpark.Common.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\EthioSpark.Common.dll.config
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\log4net.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\Newtonsoft.Json.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Net.Http.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Net.Http.Formatting.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Net.Http.WebRequest.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Web.Http.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\log4net.xml
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\Newtonsoft.Json.xml
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Net.Http.xml
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Net.Http.Formatting.xml
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Net.Http.WebRequest.xml
+C:\MyProjects\EthioSpark\EthioSpark.Common\bin\Debug\System.Web.Http.xml
+C:\MyProjects\EthioSpark\EthioSpark.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\EthioSpark\EthioSpark.Common\obj\Debug\EthioSpark.Common.dll
+C:\MyProjects\EthioSpark\EthioSpark.Common\obj\Debug\EthioSpark.Common.pdb

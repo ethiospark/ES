@@ -1,0 +1,134 @@
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.dll.config
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.pdb
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Net.Http.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Net.Http.WebRequest.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Helpers.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Http.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Mvc.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Razor.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.WebPages.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.BuisnessLogic.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Optimization.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\WebGrease.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\Antlr3.Runtime.dll
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.pdb
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Net.Http.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Net.Http.WebRequest.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Helpers.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Http.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Mvc.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.Razor.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.WebPages.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.BuisnessLogic.pdb
+C:\MyProjects\ES\EthioSpark.Tests\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\ES\EthioSpark.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES\EthioSpark.Tests\obj\Debug\EthioSpark.Tests.dll
+C:\MyProjects\ES\EthioSpark.Tests\obj\Debug\EthioSpark.Tests.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.dll.config
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Net.Http.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Net.Http.WebRequest.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Helpers.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Http.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Mvc.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Razor.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.WebPages.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.BuisnessLogic.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Optimization.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EntityFramework.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\WebGrease.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\MySql.Data.Entity.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\Antlr3.Runtime.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\MySql.Data.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Net.Http.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Net.Http.WebRequest.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Helpers.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Http.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Mvc.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.Razor.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.WebPages.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.BuisnessLogic.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EntityFramework.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\obj\Debug\EthioSpark.Tests.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Tests\obj\Debug\EthioSpark.Tests.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.dll.config
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Tests.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Net.Http.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Net.Http.WebRequest.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Helpers.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Http.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Mvc.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Razor.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.WebPages.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Optimization.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.BuisnessLogic.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\WebGrease.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.DataAccess.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EntityFramework.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Common.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\Antlr3.Runtime.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Net.Http.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Net.Http.WebRequest.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Helpers.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Http.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Mvc.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.Razor.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.WebPages.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.BuisnessLogic.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.DataAccess.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EntityFramework.xml
+C:\MyProjects\EthioSpark\EthioSpark.Tests\bin\Debug\EthioSpark.Common.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\EthioSpark\EthioSpark.Tests\obj\Debug\EthioSpark.Tests.dll
+C:\MyProjects\EthioSpark\EthioSpark.Tests\obj\Debug\EthioSpark.Tests.pdb

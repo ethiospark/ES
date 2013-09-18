@@ -1,0 +1,23 @@
+C:\MyProjects\ES\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\ES\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\ES\EthioSpark.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES\EthioSpark.Entities\obj\Debug\EthioSpark.Entities.dll
+C:\MyProjects\ES\EthioSpark.Entities\obj\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.dll.config
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\bin\Debug\EntityFramework.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\bin\Debug\EntityFramework.xml
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\obj\Debug\EthioSpark.Entities.dll
+C:\MyProjects\ES - CodeFirst\EthioSpark.Entities\obj\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.dll.config
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.dll
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\EntityFramework.dll
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\EntityFramework.xml
+C:\MyProjects\EthioSpark\EthioSpark.Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\MyProjects\EthioSpark\EthioSpark.Entities\obj\Debug\EthioSpark.Entities.dll
+C:\MyProjects\EthioSpark\EthioSpark.Entities\obj\Debug\EthioSpark.Entities.pdb
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\MySql.Data.dll
+C:\MyProjects\EthioSpark\EthioSpark.Entities\bin\Debug\MySql.Data.Entity.dll
